@@ -7,4 +7,4 @@ def uniq_add(my_list=[]):
         if elem not in lst:
             sum += elem
         lst.append(elem)
-    return sum
+    return (sum)

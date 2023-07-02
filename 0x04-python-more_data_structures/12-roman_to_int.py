@@ -5,7 +5,7 @@ def roman_to_int(roman_string):
     num = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
     sum = 0
     temp = ""
-    if isinstance(roman_number, str):
+    if isinstance(roman_number, str) and roman_number:
         for x in roman_string:
             if x in num:
                 if ((x == "X" and temp == "I") or

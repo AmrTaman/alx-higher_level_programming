@@ -1,11 +1,7 @@
 #!/usr/bin/python3
 
 def square_matrix_simple(matrix=[]):
-    if matrix:
-        mat = []
-        for line in matrix:
-            a = []
-            for n in line:
-                a.append(n**2)
-            mat.append(a)
-        return(mat)
+    new = []
+    for lst in matrix:
+        new.append([elem**2 for elem in lst])
+    return (new)

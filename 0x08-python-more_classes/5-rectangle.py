@@ -60,8 +60,7 @@ class Rectangle:
             if i != self.__height - 1 and x:
                 m += "\n"
         return (m)
-      
+
     def __del__(self):
-      """delete instance"""
-      print("Bye rectangle...")
-      
+        """delete instance"""
+        print("Bye rectangle...")

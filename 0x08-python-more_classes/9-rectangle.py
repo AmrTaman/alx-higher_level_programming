@@ -66,6 +66,14 @@ class Rectangle:
             if i != self.__height - 1 and x:
                 m += "\n"
         return (m)
+    @classmethod
+    def square(cls, size=0):
+        """Return a new Rectangle with width and height equal to size.
+
+        Args:
+            size (int): The width and height of the new Rectangle.
+        """
+        return (cls(size, size))
 
     def __del__(self):
         """delete instance"""
@@ -83,8 +91,3 @@ class Rectangle:
             return (rect_1)
         else:
             return (rect_2)
-
-    @classmethod
-    def square(cls, size=0):
-        """class method"""
-        return (cls(size, size))

@@ -46,6 +46,7 @@ class Rectangle:
         if (self.__width == 0) or (self.height == 0):
             return 0
         return ((self.height + self.__width) * 2)
+
     def __str__(self):
         """Sets the str"""
         m = ""

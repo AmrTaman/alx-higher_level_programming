@@ -46,7 +46,9 @@ class Rectangle:
         if (self.__width == 0) or (self.height == 0):
             return 0
         return ((self.height + self.__width) * 2)
-      
+    def __repr(self):
+      """repr"""
+      return "Rectangle("+ str(self.__width) + ", " + str(self.__length) + ")"  
     def __str__(self):
         """Sets the str"""
         m = ""
@@ -58,7 +60,3 @@ class Rectangle:
             if i != self.__height - 1 and x:
                 m += "\n"
         return (m)
-
-    def __repr(self):
-      """repr"""
-      return "Rectangle" + "(" + str(self.__width) + ", " + str(self.__length) + ")"

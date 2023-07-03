@@ -49,6 +49,8 @@ class Rectangle:
     def __str__(self):
         """Sets the str"""
         m = ""
+        if (self.__height == 0) or (self.__width == 0):
+            return ("")
         for i in range(self.__height):
             for x in range(self.__width):
                 m += "#"

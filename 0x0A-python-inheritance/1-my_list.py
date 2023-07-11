@@ -1,12 +1,16 @@
 #!/usr/bin/python3
-"""Module"""
+"""
+===========================
+Module with class MyList
+===========================
+"""
 
 
-class Mylist(list):
-    """Class inherits the list class"""
+class MyList(list):
+    """Class with method print_sorted"""
     pass
 
     def print_sorted(self):
-        """method for sorting a list"""
+        """Methot that sorted a list"""
 
         print(sorted(list(self)))

@@ -3,4 +3,5 @@
 
 def lookup(obj):
     """obj function prints dictionary of an object"""
+
     return (dir(obj))

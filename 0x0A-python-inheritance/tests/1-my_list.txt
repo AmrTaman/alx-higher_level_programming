@@ -1,0 +1,13 @@
+===========
+Testing print_sorted
+===========
+
+:: with non list
+   >>> MyList = __import__('1-my_list').MyList
+   >>> my_list = MyList()
+   >>> my_list.append(8)
+   >>> my_list.append(4)
+   >>> my_list.append(66)
+   >>> my_list.print_sorted()
+   [8, 4, 66]
+

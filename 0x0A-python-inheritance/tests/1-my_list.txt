@@ -57,4 +57,4 @@ Function "print_sorted" test
     >>> my_list.print_sorted()
     Traceback (most recent call last):
         ...
-    TypeError: '<' not supported between instances of 'NoneType' and 'int' 
+    TypeError: '<' not supported between instances of 'NoneType' and 'int'

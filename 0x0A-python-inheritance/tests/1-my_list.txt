@@ -5,10 +5,11 @@ Testing the module 1-my_list.py
 Function "print_sorted" test
 
 :: checking instance 
->>>my_list = MyList()
->>> isinstance(my_list) == list
+>>> my_list = MyList()
+>>> isinstance(my_list, list)
 Trure
-
+>>> my_list.print_sorted()
+[]
 :: checking +ve integer
 >>>my_list.append(1)
 >>>my_list.append(6)

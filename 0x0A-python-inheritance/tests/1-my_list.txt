@@ -8,10 +8,9 @@ Function "print_sorted" test
     >>> MyList = __import__('1-my_list').MyList
     >>> my_list = MyList()
     >>> isinstance(my_list, list)
-    Trure
+    True
     >>> my_list.print_sorted()
     []
-:: checking +ve integer
     >>> my_list.append(1)
     >>> my_list.append(6)
     >>> my_list.append(4)

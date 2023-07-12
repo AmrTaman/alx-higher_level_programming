@@ -5,6 +5,7 @@ Testing the module 1-my_list.py
 Function "print_sorted" test
 
 :: checking instance 
+    >>> MyList = __import__('1-my_list').MyList
     >>> my_list = MyList()
     >>> isinstance(my_list, list)
     Trure

@@ -32,19 +32,19 @@ Function "print_sorted" test
     [-4, -3, -3, 0, 1, 4, 6, 8, 8]
 
 :: when all elementes in the list are the same
-   >>> my_list.clear()
-   >>> my_list.append(5)
-   >>> my_list.append(5)
-   >>> my_list.append(5)
-   >>> my_list.append(5)
-   >>> my_list.append(5)
-   >>> my_list.print_sorted()
-   [5, 5, 5, 5, 5]
+    >>> my_list.clear()
+    >>> my_list.append(5)
+    >>> my_list.append(5)
+    >>> my_list.append(5)
+    >>> my_list.append(5)
+    >>> my_list.append(5)
+    >>> my_list.print_sorted()
+    [5, 5, 5, 5, 5]
 
 :: with a max integer
-   >>> my_list.append(10000000000000000000000000000000000000000000)
-   >>> my_list.print_sorted()
-   [5, 5, 5, 5, 5, 10000000000000000000000000000000000000000000]
+    >>> my_list.append(10000000000000000000000000000000000000000000)
+    >>> my_list.print_sorted()
+    [5, 5, 5, 5, 5, 10000000000000000000000000000000000000000000]
 
 :: Checking non integer
     >>> my_list.append(int("ss"))

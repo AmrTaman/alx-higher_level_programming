@@ -16,4 +16,3 @@ my_list = []
 for index in range(1, len(sys.argv)):
     my_list.append(sys.argv[index])
 save_to_json_file(my_list, my_file)
-

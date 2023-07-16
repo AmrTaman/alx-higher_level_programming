@@ -13,6 +13,8 @@ load_from_json_file = __import__("6-load_from_json_file").load_from_json_file
 
 my_file = 'add_item.json'
 my_list = []
+if (load_from_json_file(my_file)):
+    my_list = load_from_json_file(my_file)
 for index in range(1, len(sys.argv)):
     my_list.append(sys.argv[index])
 save_to_json_file(my_list, my_file)

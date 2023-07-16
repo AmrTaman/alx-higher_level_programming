@@ -15,5 +15,5 @@ my_file = 'add_item.json'
 my_list = []
 for word in sys.argv:
     my_list.append(word)
-save_to_json_file(my_list, add_item.json)
+save_to_json_file(my_list, my_file)
 

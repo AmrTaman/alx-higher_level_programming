@@ -2,7 +2,7 @@
 """Iam the module"""
 
 
-class Base:
+class Base :
   """This is class base"""
 
   __nb_objects = 0

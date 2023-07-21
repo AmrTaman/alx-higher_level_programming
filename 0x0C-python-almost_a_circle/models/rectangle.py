@@ -8,12 +8,12 @@ class Rectangle(Base) :
 
   def __init__(self, width, height, x=0, y=0, id=None) :
     """Iam init method"""
-
     super().__init__(self, id)
     self.width = width
     self.height = height
     self.x = x
     sefl.y = y
+
   @property
   def width(self) :
     """Iam the setter and getter"""
@@ -21,6 +21,7 @@ class Rectangle(Base) :
   @width.setter
   def width(self, w) :
     self.__width = w
+
   @property
   def height(self) :
     """Iam the setter and getter"""
@@ -28,6 +29,7 @@ class Rectangle(Base) :
   @height.setter
   def height(self, h) :
     self.__height = h
+
   @property
   def x(self) :
     """Iam the setter and getter"""
@@ -35,6 +37,7 @@ class Rectangle(Base) :
   @x.setter
   def x(self, x) :
     self.__x = x
+
   @property
   def y(self) :
     """Iam the setter and getter"""

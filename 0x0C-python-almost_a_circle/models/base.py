@@ -13,5 +13,4 @@ class Base:
       self.id = id
     else :
       __nb_objects += 1
-      self.id = __nb_objectss
-      
+      self.id = __nb_objects

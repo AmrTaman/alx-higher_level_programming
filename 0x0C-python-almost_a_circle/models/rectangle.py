@@ -1,13 +1,12 @@
 #!/usr/bin/python3
-"""Iam the module rectangle"""
+"""Iam the module rectangle."""
 __import__("base.py")
 
 
 class Rectangle(Base) :
-  """Iam class Rectangle"""
-
+  """Iam class Rectangle."""
   def __init__(self, width, height, x=0, y=0, id=None) :
-    """Iam init method"""
+    """Iam init method."""
     super().__init__(self, id)
     self.width = width
     self.height = height
@@ -16,7 +15,7 @@ class Rectangle(Base) :
 
   @property
   def width(self) :
-    """Iam the setter and getter"""
+    """Iam the setter and getter."""
     return (self.__width)
   @width.setter
   def width(self, w) :
@@ -24,7 +23,7 @@ class Rectangle(Base) :
 
   @property
   def height(self) :
-    """Iam the setter and getter"""
+    """Iam the setter and getter."""
     return (self.__height)
   @height.setter
   def height(self, h) :
@@ -32,7 +31,7 @@ class Rectangle(Base) :
 
   @property
   def x(self) :
-    """Iam the setter and getter"""
+    """Iam the setter and getter."""
     return (self.__x)
   @x.setter
   def x(self, x) :
@@ -40,7 +39,7 @@ class Rectangle(Base) :
 
   @property
   def y(self) :
-    """Iam the setter and getter"""
+    """Iam the setter and getter."""
     return (self.__y)
   @y.setter
   def y(self, y) :

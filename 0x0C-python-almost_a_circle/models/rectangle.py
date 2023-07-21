@@ -1,6 +1,6 @@
 #!/usr/bin/python3
+__import__("base.py")
 """Iam the module rectangle"""
-__import__("base.py") 
 
 
 class Rectangle(Base) :

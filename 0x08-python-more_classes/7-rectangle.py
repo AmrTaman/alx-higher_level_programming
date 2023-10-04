@@ -52,9 +52,9 @@ class Rectangle:
             return ((self.width + self.height) * 2)
 
     def __str__(self):
-        str = ""
+        str = None
         if self.width == 0 or self.height == 0:
-            return (str)
+            return ("")
         for x in range(self.height):
             for y in range(self.width):
                 str += Rectangle.print_symbol

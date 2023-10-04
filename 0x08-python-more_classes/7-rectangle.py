@@ -57,7 +57,7 @@ class Rectangle:
             return ("")
         for x in range(self.height):
             for y in range(self.width):
-                str += str(Rectangle.print_symbol)
+                str += repr(Rectangle.print_symbol)
             str += "\n"
         str = str[0:len(str) - 1]
         return (str)

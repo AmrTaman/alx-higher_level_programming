@@ -54,3 +54,4 @@ class Rectangle:
         for y in self.width:
           str.append("#")
         str.append("\n")
+      return (str)

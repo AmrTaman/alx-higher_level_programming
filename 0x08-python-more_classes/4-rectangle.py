@@ -57,6 +57,7 @@ class Rectangle:
             str += "\n"
         str = str[0:len(str) - 1]
         return (str)
+
     def __repr__(self):
         if self.width == 0 or self.height == 0:
             return ("")

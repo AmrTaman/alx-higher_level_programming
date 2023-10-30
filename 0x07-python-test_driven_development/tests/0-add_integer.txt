@@ -2,7 +2,7 @@ This is a docstring for documenting the
 0-add_integer module and testing the add_integer function
 
 first we inmport the module
->>> from 0-add_integer.py import add_integer
+>>> add_integer = __import__('0-add_integer').add_integer
 
 1) two positive integrs
 

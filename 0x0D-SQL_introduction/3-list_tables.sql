@@ -1,2 +1,2 @@
--- script for lists all databases in MySQL server
-SHOW TABLES FROM your_database_name;
+-- Lists all tables of a database on my MySQL server.
+SHOW TABLES;

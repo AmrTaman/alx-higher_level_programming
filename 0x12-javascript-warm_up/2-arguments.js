@@ -5,6 +5,4 @@ if (argLength <= 2) {
   console.log('No argument');
 } else if (argLength > 2) {
   console.log('Argument found');
-} else {
-	console.log("Arguments found");
 }

@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+
+"""
+saddsasdasdasd
+"""
+
 import MySQLdb
 import sys
 
@@ -18,4 +23,3 @@ if __name__ == "__main__":
         print(row)
     cur.close()
     db.close()
-

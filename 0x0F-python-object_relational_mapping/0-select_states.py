@@ -1,9 +1,4 @@
 #!/usr/bin/python3
-
-"""
-this module executes sql through mysqldb class
-"""
-
 import MySQLdb
 import sys
 
@@ -21,5 +16,3 @@ cur.execute("SELECT * FROM states ORDER BY id ASC")
 rows = cur.fetchall()
 for row in rows:
     print(row)
-cur.close()
-db.close()

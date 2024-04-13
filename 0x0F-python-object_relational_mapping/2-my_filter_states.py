@@ -18,8 +18,8 @@ if __name__ == "__main__":
             db=args[2]
     )
     cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE name = '{}'"
-            " ORDER BY id ASC".format(args[3]))
+    cur.execute("SELECT * FROM states WHERE name LIKE '{}'"
+                " ORDER BY id ASC".format(args[3]))
     row = cur.fetchone()
     print(row)
     cur.close()

@@ -9,17 +9,17 @@ import MySQLdb
 
 
 if __name__ == "__main__":
-    args = (sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
+    username, password, database, state_name = sys.argv[1:]
     db = MySQLdb.connect(
             host="localhost",
             port=3306,
-            user=args[0],
-            passwd=args[1],
-            db=args[2]
+            user=username,
+            passwd=password,
+            db=database
     )
     cur = db.cursor()
     cur.execute("SELECT * FROM states WHERE name LIKE '{}'"
-                " ORDER BY id ASC".format(args[3]))
+                " ORDER BY id ASC".format(state_name))
     rows = cur.fetchall()
     for row in rows:
         print(row)

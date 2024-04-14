@@ -4,7 +4,6 @@
 the quries
 """
 
-from relationship_city import City
 import sys
 from sqlalchemy import create_engine
 from relationship_state import Base, State
@@ -18,9 +17,9 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    states = session.query(State).order_by(State.id).all()
+    states = session.query(State).order_by(State.id, City.id).all()
     for state in states:
         print("{}: {}".format(state.id, state.name))
-        for city in sorted(state.cities, key=lambda x: x.id):
+        for city in state.cities:
             print("\t{}: {}".format(city.id, city.name))
     session.close()

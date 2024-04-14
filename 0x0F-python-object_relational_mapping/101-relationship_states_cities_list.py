@@ -8,7 +8,6 @@ import sys
 from sqlalchemy import create_engine
 from relationship_state import Base, State
 from sqlalchemy.orm import sessionmaker
-from relationship_city import City
 
 
 if __name__ == "__main__":

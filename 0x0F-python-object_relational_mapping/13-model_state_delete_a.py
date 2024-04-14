@@ -18,6 +18,6 @@ if __name__ == "__main__":
     session = Session()
     states = session.query(State).order_by(State.id).filter(
         func.binary(State.name).like('%a%')).all()
-    session.delete(states)
+    [session.delete(state) for state in states]
     session.commit()
     session.close()

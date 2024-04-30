@@ -1,25 +1,21 @@
 #!/usr/bin/python3
 """
-qasaa
+Find a peak
 """
 
 
 def find_peak(list_of_integers):
-    """
-    ssssss
-    """
-    peak = 0
-    for i in range(len(list_of_integers)):
-        if i == 0 and list_of_integers[i] > list_of_integers[i + 1]:
-            return list_of_integers[i]
-        if i != len(list_of_integers) - 1 and list_of_integers[i] < list_of_integers[i + 1]  :
-            peak = list_of_integers[i + 1]
-            if list_of_integers[i + 1] > list_of_integers[i + 2]:
-                return peak
-        if i != len(list_of_integers) - 1 and list_of_integers[i] > list_of_integers[i + 1] :
-            peak = list_of_integers[i + 1]
-            if list_of_integers[i + 1] < list_of_integers[i + 2]:
-                return peak
-        if i == len(list_of_integers) - 1:
-            return list_of_integers[i]
-    return
+    """a function that finds a peak in a list of unsorted integers."""
+    x = list_of_integers
+    left = 0
+    right = len(x) - 1
+
+    if (len(x) == 0):
+        return "None"
+    while left < right:
+        m = (left + right) // 2
+        if x[m] < x[m + 1]:
+            left = m + 1
+        else:
+            right = m
+    return (x[left])

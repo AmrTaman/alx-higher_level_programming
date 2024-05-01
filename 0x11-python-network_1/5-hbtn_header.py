@@ -1,10 +1,13 @@
 #!/usr/bin/python3
-"""module for getting a request
+"""
+module for getting a request
 dddddd
 """
 
-import requests
-import sys
+if __name__ == '__main__':
 
-r = requests.get(sys.argv[1])
-print(r.headers['X-Request-Id'])
+    import requests
+    import sys
+
+    r = requests.get(sys.argv[1])
+    print(r.headers['X-Request-Id'])

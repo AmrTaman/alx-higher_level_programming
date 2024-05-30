@@ -7,6 +7,6 @@ request(url, function (err, response, body) {
   }
   const data = JSON.parse(body).results;
   const len = data.filter(film =>
-    film.characters.includes('https://swapi-api.alx-tools.com/api/people/18/')).length;
+    film.characters.includes('/18/')).length;
   console.log(len);
 });

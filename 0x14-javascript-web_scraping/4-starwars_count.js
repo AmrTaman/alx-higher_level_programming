@@ -7,6 +7,6 @@ request(url, function (err, response, body) {
   }
   const data = JSON.parse(body).results;
   const len = data.filter(film =>
-    film.characters.includes('/18/')).length;
+    film.characters.some(str => str.includes('/18/'))).length;
   console.log(len);
 });
